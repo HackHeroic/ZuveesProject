@@ -9,7 +9,7 @@ const Categories = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/categories"); // Adjust API URL as needed
+        const response = await axios.get("https://zuveesbackend.onrender.com/api/categories"); // Adjust API URL as needed
         setCategories(response.data);
         setLoading(false);
       } catch (err) {
