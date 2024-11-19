@@ -7,7 +7,7 @@ dotenv.config();
 const port = process.env.PORT ||3001
 
 const app = express();
-app.use(cors());
+app.use(cors({origin:"https://zuvees-project-frontend-gql5gqgtg-murali-madhav-cs-projects.vercel.app"}));
 app.use(express.json());
 
 
