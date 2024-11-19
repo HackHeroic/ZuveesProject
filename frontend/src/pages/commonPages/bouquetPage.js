@@ -12,7 +12,7 @@ const BouquetPage = () => {
     const fetchBouquets = async () => {
       try {
         console.log(1);
-        const response = await fetch('http://localhost:3000/api/products');
+        const response = await fetch('https://zuveesbackend.onrender.com/api/products');
         console.log(2);
         const data = await response.json();
 
