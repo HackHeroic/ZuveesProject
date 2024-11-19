@@ -9,7 +9,7 @@ const RawMaterials = () => {
   useEffect(() => {
     const fetchMaterials = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/materials"); // Adjust API URL
+        const response = await axios.get("https://zuveesbackend.onrender.com/api/materials"); // Adjust API URL
         setMaterials(response.data);
         setLoading(false);
       } catch (err) {
